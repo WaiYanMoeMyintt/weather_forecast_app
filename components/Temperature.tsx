@@ -46,15 +46,16 @@ const Temperature = () => {
   };
 
   //get current message
+  console.log(messageStatus)
   useEffect(() => {
     if (messageStatus <= 12) {
       setMessage("Good Morning");
-    } 
-    else if (messageStatus >= 12 || messageStatus <= 17){
-      setMessage("Good Afternoon");
     }
-    else {
+    else if(messageStatus >= 18){
       setMessage("Good Night");
+    }
+    else if (messageStatus >= 12 || messageStatus <= 17) {
+      setMessage("Good Afternoon!");
     }
    
   });
@@ -74,7 +75,7 @@ const Temperature = () => {
 
   return (
     <div className="pt-6 pb-5 px-4  border rounded-lg flex flex-col justify-between dark:bg-dark-grey shadow-sm dark-shadow-none">
-      <p className="flex justify-between justify-between items-center">
+      <p className="flex justify-between  items-center">
         <span className="font-medium">{message}</span>
         <span className="font-medium">{currentDay}</span>
         <span className="font-medium">{localTime}</span>

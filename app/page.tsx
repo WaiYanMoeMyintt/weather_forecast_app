@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Temperature from "@/components/Temperature";
 import AirPollutation from "@/components/AirPollutation";
+import Sunseet from "@/components/Sunseet";
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
         <div className="flex flex-col">
           <div className="instruments grid h-full gap-4 col-span-full sm-2:col-span-2 lg:grid-cols-3 xl:grid-cols-4">
               <AirPollutation />
+              <Sunseet />
           </div>
         </div>
       </div>
