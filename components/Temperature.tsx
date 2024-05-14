@@ -12,10 +12,15 @@ import {
   navigation,
 } from "@/lib/icons";
 import moment from "moment";
+import { Skeleton } from "./ui/skeleton";
 const Temperature = () => {
   const { forecast } = useGlobalContext();
   const { main, timezone, name, weather } = forecast;
-  if (!forecast || !weather) return <div>Loading...</div>;
+  if (!forecast || !weather){
+    return (
+      <Skeleton className="h-[12rem] shadow-md w-full col-span-2 md:col-span-full" />
+    );
+  }
 
   const [localTime, setLocalTime] = useState<string>("");
   const [currentDay, setCurrentDay] = useState<string>("");

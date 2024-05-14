@@ -18,9 +18,6 @@ const Sunset = () => {
   const sunsetTime = unitToTime(forecast.sys.sunset, forecast.timezone);
   const sunriseTime = unitToTime(forecast.sys.sunrise, forecast.timezone);
 
-  console.log("Sunset:", sunsetTime);
-  console.log("Sunrise:", sunriseTime);
-
   return (
     <div
       className="pt-6 px-4 h-[12rem] border rounded-lg flex flex-col gap-8
