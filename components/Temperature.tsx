@@ -51,7 +51,7 @@ const Temperature = () => {
   };
 
   //get current message
-  console.log(messageStatus)
+
   useEffect(() => {
     if (messageStatus <= 12) {
       setMessage("Good Morning");

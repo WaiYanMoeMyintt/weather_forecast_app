@@ -34,7 +34,7 @@ function AirPollution() {
        dark:bg-dark-grey shadow-sm dark:shadow-none col-span-full sm-2:col-span-2 md:col-span-2 xl:col-span-2"
     >
       <h2 className="flex items-center gap-2 font-medium">
-        {thermo}Air Pollusion
+        {thermo} Air Pollusion
       </h2>
       <Progress value={airQualityIndex} max={100} className="progress" />
       <p className="text-sm">Air quality is {description}. </p>
