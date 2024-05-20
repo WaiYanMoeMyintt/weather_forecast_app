@@ -5,6 +5,7 @@ import AirPollutation from "@/components/AirPollutation";
 import Sunseet from "@/components/Sunseet";
 import Wind from "@/components/Wind";
 import DailyForecast from "@/components/DailyForecast";
+import UV from "@/components/UV";
 const Main = () => {
   return (
     <main className="mx-[1rem] lg:mx-[2rem] xl:mx-[6rem] 2xl:mx-[16rem] m-auto">
@@ -19,6 +20,7 @@ const Main = () => {
               <Sunseet />
               <Wind />
               <DailyForecast />
+              <UV />
           </div>
         </div>
       </div>

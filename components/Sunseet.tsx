@@ -27,9 +27,7 @@ const Sunset = () => {
         <h2 className="flex items-center gap-2 font-medium">{sunset} Sunset</h2>
         <p className="pt-4 text-2xl">{sunsetTime}</p>
       </div>
-      <div>
         <p>Sunrise {sunriseTime}</p>
-      </div>
     </div>
   );
 };
